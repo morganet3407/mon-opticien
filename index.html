@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>L'Optique Signature | Cabinet d'Optométrie & Montures de Créateurs</title>
+  <meta name="description" content="Découvrez L'Optique Signature, votre cabinet d'opticien haut de gamme. Examens de vue haute technologie, visagisme sur-mesure et collections exclusives de créateurs.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👓</text></svg>">
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- --- EN-TÊTE DE NAVIGATION (HEADER) --- -->
+  <header class="header">
+    <div class="container header-container">
+      <a href="#home" class="logo">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="6" cy="18" r="4"/>
+          <circle cx="18" cy="18" r="4"/>
+          <path d="M12 18a2 2 0 0 0-2-2H6M12 18a2 2 0 0 1 2-2h4M2 14l2.5-4h15l2.5 4"/>
+        </svg>
+        <span>L'Optique Signature</span>
+      </a>
+
+      <!-- Menu Principal -->
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="#home" class="nav-link active">Accueil</a></li>
+          <li><a href="#services" class="nav-link">Le Concept</a></li>
+          <li><a href="#collection" class="nav-link">Collection</a></li>
+          <li><a href="#team" class="nav-link">L'Équipe</a></li>
+          <li><a href="#atelier" class="nav-link">Technologie</a></li>
+          <li><a href="#rendezvous" class="nav-link">Prendre RDV</a></li>
+        </ul>
+      </nav>
+
+      <!-- Actions (Theme Toggle & RDV) -->
+      <div class="header-actions">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Changer de thème">
+          <!-- Moon Icon -->
+          <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <!-- Sun Icon -->
+          <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+
+        <a href="#rendezvous" class="btn-premium btn-gold" id="btn-header-rdv" style="padding: 0.6rem 1.4rem; font-size: 0.85rem; display: none; @media(min-width: 1024px){display: inline-flex;}">
+          Réservation
+        </a>
+
+        <!-- Menu Hamburger Mobile -->
+        <button class="menu-toggle" id="menu-toggle" aria-label="Ouvrir le menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- --- SECTION HÉRO (HERO) --- -->
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <div class="hero-badge">
+            <span class="hero-badge-dot"></span>
+            <span>Atelier de Créateur & Optométrie</span>
+          </div>
+          <h1 class="hero-title">
+            Votre vision.<br><span>Notre signature d'exception.</span>
+          </h1>
+          <p class="hero-desc">
+            Alliez la précision scientifique d'un examen de vue de pointe à l'esthétique de montures de créateurs façonnées à la main. Vivez une expérience optique sur-mesure unique à Paris.
+          </p>
+          <div class="hero-ctas">
+            <a href="#rendezvous" class="btn-premium btn-gold" id="cta-book-appointment">
+              Prendre rendez-vous
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="#collection" class="btn-premium btn-outline" id="cta-discover-collection">
+              Découvrir la collection
+            </a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat-item">
+              <h3>15+</h3>
+              <p>Ans d'expérience</p>
+            </div>
+            <div class="stat-item">
+              <h3>99%</h3>
+              <p>Clients satisfaits</p>
+            </div>
+            <div class="stat-item">
+              <h3>30+</h3>
+              <p>Marques créateurs</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal delay-200">
+          <div class="hero-img-wrapper">
+            <img src="assets/gallery/hero.png" alt="Lunettes de créateurs haut de gamme" class="hero-img">
+          </div>
+          <!-- Éléments Flottants -->
+          <div class="floating-element float-1">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            </svg>
+            <div>
+              <span>Garantie 2 ans</span>
+            </div>
+          </div>
+          <div class="floating-element float-2">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+            </svg>
+            <div>
+              <span>Verres Haute Précision</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- --- SECTION SERVICES / EXCELLENCE --- -->
+    <section id="services" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-subtitle">Excellence visuelle</span>
+          <h2 class="section-title">Notre savoir-faire d'artisan & d'expert</h2>
+          <p class="section-desc">
+            Nous combinons des diagnostics visuels avancés avec une démarche esthétique pointue pour prendre soin de vos yeux avec élégance.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <!-- Service 1 -->
+          <div class="glass-card service-card reveal">
+            <div class="service-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                <circle cx="12" cy="12" r="3"/>
+              </svg>
+            </div>
+            <h3 class="service-title">Bilan Optométrique</h3>
+            <p class="service-desc">
+              Un examen complet de votre santé oculaire réalisé avec nos équipements de pointe en moins de 30 minutes.
+            </p>
+            <a href="#rendezvous" class="service-link">
+              Prendre RDV 
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Service 2 -->
+          <div class="glass-card service-card reveal delay-100">
+            <div class="service-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="6" cy="18" r="4"/>
+                <circle cx="18" cy="18" r="4"/>
+                <path d="M12 18a2 2 0 0 0-2-2H6M12 18a2 2 0 0 1 2-2h4M2 14l2.5-4h15l2.5 4"/>
+              </svg>
+            </div>
+            <h3 class="service-title">Conseil en Visagisme</h3>
+            <p class="service-desc">
+              Analyse morphologique et colorimétrique pour dénicher la monture qui reflète votre personnalité.
+            </p>
+            <a href="#collection" class="service-link">
+              Voir la collection
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Service 3 -->
+          <div class="glass-card service-card reveal delay-200">
+            <div class="service-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+              </svg>
+            </div>
+            <h3 class="service-title">Atelier & Ajustements</h3>
+            <p class="service-desc">
+              Taille des verres sur place et ajustements micrométriques de votre monture pour un confort absolu.
+            </p>
+            <a href="#atelier" class="service-link">
+              Notre atelier
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- --- SECTION COLLECTION SHOWCASE --- -->
+    <section id="collection" class="section collection">
+      <div class="container">
+        <div class="collection-nav reveal">
+          <div>
+            <span class="section-subtitle">Exclusivités</span>
+            <h2 class="section-title" style="margin-bottom: 0;">Nos Collections Créateurs</h2>
+          </div>
+          
+          <div class="collection-nav-arrows">
+            <button class="arrow-btn prev-arrow" aria-label="Slide précédent" disabled>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="19" y1="12" x2="5" y2="12"></line>
+                <polyline points="12 19 5 12 12 5"></polyline>
+              </svg>
+            </button>
+            <button class="arrow-btn next-arrow" aria-label="Slide suivant">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Carousel -->
+        <div class="carousel-container reveal delay-200">
+          <div class="carousel-track">
+            
+            <!-- Item 1 -->
+            <div class="collection-card">
+              <div class="collection-img-box">
+                <img src="assets/gallery/glasses1.png" alt="Modèle Crystal Vision" class="collection-img">
+                <span class="collection-badge">Nouveauté</span>
+                <button class="collection-wishlist" aria-label="Ajouter aux favoris">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                  </svg>
+                </button>
+              </div>
+              <div class="collection-info">
+                <span class="collection-tags">Optique / Acétate</span>
+                <h3 class="collection-name">L'Épure Cristalline</h3>
+                <div class="collection-footer">
+                  <span class="collection-price">280 €</span>
+                  <a href="#rendezvous" class="collection-link">
+                    Essayer en boutique
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                      <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="collection-card">
+              <div class="collection-img-box">
+                <img src="assets/gallery/glasses2.png" alt="Modèle Amber Eclipse" class="collection-img">
+                <span class="collection-badge">Solaire</span>
+                <button class="collection-wishlist" aria-label="Ajouter aux favoris">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                  </svg>
+                </button>
+              </div>
+              <div class="collection-info">
+                <span class="collection-tags">Solaire / Écaille</span>
+                <h3 class="collection-name">L'Ombre Dorée</h3>
+                <div class="collection-footer">
+                  <span class="collection-price">340 €</span>
+                  <a href="#rendezvous" class="collection-link">
+                    Essayer en boutique
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                      <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="collection-card">
+              <div class="collection-img-box">
+                <img src="assets/gallery/hero.png" alt="Modèle Titanium Pure" class="collection-img">
+                <span class="collection-badge">Édition Limitée</span>
+                <button class="collection-wishlist" aria-label="Ajouter aux favoris">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                  </svg>
+                </button>
+              </div>
+              <div class="collection-info">
+                <span class="collection-tags">Optique / Titane</span>
+                <h3 class="collection-name">Le Titane Pur</h3>
+                <div class="collection-footer">
+                  <span class="collection-price">410 €</span>
+                  <a href="#rendezvous" class="collection-link">
+                    Essayer en boutique
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                      <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 4 (Re-use glasses1 for carousel slide demo) -->
+            <div class="collection-card">
+              <div class="collection-img-box">
+                <img src="assets/gallery/glasses1.png" alt="Modèle Signature acetate" class="collection-img">
+                <span class="collection-badge">Classique</span>
+                <button class="collection-wishlist" aria-label="Ajouter aux favoris">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                  </svg>
+                </button>
+              </div>
+              <div class="collection-info">
+                <span class="collection-tags">Optique / Corne</span>
+                <h3 class="collection-name">La Corne d'Antan</h3>
+                <div class="collection-footer">
+                  <span class="collection-price">490 €</span>
+                  <a href="#rendezvous" class="collection-link">
+                    Essayer en boutique
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                      <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- --- SECTION NOTRE ÉQUIPE (TEAM) --- -->
+    <section id="team" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-subtitle">Notre Équipe</span>
+          <h2 class="section-title">Les Visages de l'Excellence</h2>
+          <p class="section-desc">
+            Rencontrez nos trois experts passionnés qui allient précision médicale et style pour transformer votre regard.
+          </p>
+        </div>
+
+        <div class="team-grid">
+          <!-- Team 1 -->
+          <div class="team-card reveal">
+            <div class="team-img-wrapper">
+              <img src="assets/team/antoine.png" alt="Dr. Antoine Dupuis" class="team-img">
+            </div>
+            <div class="team-info">
+              <span class="team-role">Optométriste Certifié</span>
+              <h3 class="team-name">Dr. Antoine Dupuis</h3>
+              <p class="team-bio">
+                Expert en réfraction complexe et santé oculaire. Antoine réalise vos bilans avec précision depuis 12 ans.
+              </p>
+              <div class="team-socials">
+                <a href="#" class="team-socials-btn" aria-label="LinkedIn d'Antoine"><span style="font-weight: bold;">in</span></a>
+                <a href="#" class="team-socials-btn" aria-label="Contacter Antoine">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                    <polyline points="22,6 12,13 2,6"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Team 2 -->
+          <div class="team-card reveal delay-100">
+            <div class="team-img-wrapper">
+              <img src="assets/team/clara.png" alt="Clara Morel" class="team-img">
+            </div>
+            <div class="team-info">
+              <span class="team-role">Styliste Visagiste</span>
+              <h3 class="team-name">Clara Morel</h3>
+              <p class="team-bio">
+                Passionnée par le design et la mode. Clara analyse votre morphologie pour sublimer votre visage.
+              </p>
+              <div class="team-socials">
+                <a href="#" class="team-socials-btn" aria-label="Instagram de Clara"><span style="font-weight: bold;">ig</span></a>
+                <a href="#" class="team-socials-btn" aria-label="LinkedIn de Clara"><span style="font-weight: bold;">in</span></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Team 3 -->
+          <div class="team-card reveal delay-200">
+            <div class="team-img-wrapper">
+              <img src="assets/team/thomas.png" alt="Thomas Lemaire" class="team-img">
+            </div>
+            <div class="team-info">
+              <span class="team-role">Artisan Lunetier</span>
+              <h3 class="team-name">Thomas Lemaire</h3>
+              <p class="team-bio">
+                Maître d'atelier. Thomas façonne, ajuste et répare vos lunettes dans le respect des traditions.
+              </p>
+              <div class="team-socials">
+                <a href="#" class="team-socials-btn" aria-label="Atelier Thomas"><span style="font-weight: bold;">yt</span></a>
+                <a href="#" class="team-socials-btn" aria-label="LinkedIn de Thomas"><span style="font-weight: bold;">in</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- --- SECTION TECHNOLOGIE & ATELIER --- -->
+    <section id="atelier" class="section tech">
+      <div class="container tech-grid">
+        <div class="tech-visual reveal">
+          <!-- Box 1 -->
+          <div class="glass-card tech-box">
+            <div class="tech-icon">🔬</div>
+            <h3>Réfractométrie 3D</h3>
+            <p>Cartographie complète de votre cornée pour corriger les plus petites aberrations de vision.</p>
+          </div>
+          <!-- Box 2 -->
+          <div class="glass-card tech-box">
+            <div class="tech-icon">🖥️</div>
+            <h3>Centrage IA</h3>
+            <p>Prise de mesure numérique au dixième de millimètre pour optimiser le confort visuel.</p>
+          </div>
+          <!-- Box 3 -->
+          <div class="glass-card tech-box tech-box-large">
+            <div class="tech-icon">🛠️</div>
+            <h3>Façonnage sur Place</h3>
+            <p>Notre atelier interne assure la taille, le montage et le contrôle qualité final de vos verres en moins d'une heure.</p>
+          </div>
+        </div>
+
+        <div class="tech-details reveal delay-200">
+          <span class="section-subtitle">Technologie exclusive</span>
+          <h2 class="section-title">L'alliance de la science et de la haute lunetterie</h2>
+          <p class="section-desc">
+            Nous avons équipé notre cabinet d'instruments de diagnostic de dernière génération. Ces technologies nous permettent de personnaliser les verres progressifs ou unifocaux en fonction de la dynamique naturelle de votre regard.
+          </p>
+          
+          <ul class="tech-list">
+            <li class="tech-item">
+              <div class="tech-item-check">✓</div>
+              <div>
+                <h4>Examen Haute Précision</h4>
+                <p>Mesures subjectives et objectives croisées pour une correction parfaitement reposante.</p>
+              </div>
+            </li>
+            <li class="tech-item">
+              <div class="tech-item-check">✓</div>
+              <div>
+                <h4>Personnalisation Physiologique</h4>
+                <p>Prise en compte de la distance de lecture et de la position de la tête.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- --- SECTION CONTACT & APPOINTMENT --- -->
+    <section id="rendezvous" class="section">
+      <div class="container contact-grid">
+        
+        <!-- Informations de Contact -->
+        <div class="contact-info reveal">
+          <div>
+            <span class="section-subtitle">Nous rendre visite</span>
+            <h2 class="section-title">Prendre Rendez-vous</h2>
+            <p class="section-desc">
+              Réservez votre créneau en ligne ou contactez-nous directement pour toute demande spécifique.
+            </p>
+            
+            <ul class="contact-details-list">
+              <li class="contact-item">
+                <div class="contact-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                    <circle cx="12" cy="10" r="3"/>
+                  </svg>
+                </div>
+                <div class="contact-text">
+                  <h4>Notre Adresse</h4>
+                  <p>15 Rue de la Paix, 75002 Paris</p>
+                </div>
+              </li>
+              <li class="contact-item">
+                <div class="contact-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                  </svg>
+                </div>
+                <div class="contact-text">
+                  <h4>Téléphone</h4>
+                  <p>01 42 68 55 90</p>
+                </div>
+              </li>
+              <li class="contact-item">
+                <div class="contact-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                    <polyline points="22,6 12,13 2,6"/>
+                  </svg>
+                </div>
+                <div class="contact-text">
+                  <h4>Email</h4>
+                  <p>contact@optiquesignature.com</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="contact-hours">
+            <h4>Horaires d'Ouverture</h4>
+            <div class="hours-grid">
+              <span>Lundi - Vendredi</span>
+              <span>09:30 - 19:30</span>
+              <span>Samedi</span>
+              <span>10:00 - 19:00</span>
+              <span>Dimanche</span>
+              <span>Fermé</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Formulaire de Réservation -->
+        <div class="glass-card booking-form-box reveal delay-200" id="booking-card">
+          <form class="booking-form" id="appointment-form">
+            <div class="form-group-row">
+              <div class="form-group">
+                <label for="form-name" class="form-label">Nom Complet</label>
+                <input type="text" id="form-name" class="form-input" placeholder="Ex: Jean Dupont" required>
+              </div>
+              <div class="form-group">
+                <label for="form-email" class="form-label">Adresse Email</label>
+                <input type="email" id="form-email" class="form-input" placeholder="Ex: jean.dupont@gmail.com" required>
+              </div>
+            </div>
+
+            <div class="form-group-row">
+              <div class="form-group">
+                <label for="form-phone" class="form-label">Téléphone</label>
+                <input type="tel" id="form-phone" class="form-input" placeholder="Ex: 06 12 34 56 78" required>
+              </div>
+              <div class="form-group">
+                <label for="form-service" class="form-label">Type de Service</label>
+                <select id="form-service" class="form-input" required>
+                  <option value="" disabled selected>Choisir un motif...</option>
+                  <option value="examen">Examen de vue & Bilan</option>
+                  <option value="visagisme">Conseil Visagisme / Achat</option>
+                  <option value="ajustement">Ajustement / Réparation</option>
+                  <option value="lentilles">Adaptation Lentilles</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group-row">
+              <div class="form-group">
+                <label for="form-date" class="form-label">Date souhaitée</label>
+                <input type="date" id="form-date" class="form-input" required>
+              </div>
+              <div class="form-group">
+                <label for="form-time" class="form-label">Heure souhaitée</label>
+                <select id="form-time" class="form-input" required>
+                  <option value="" disabled selected>Choisir une heure...</option>
+                  <option value="09:30">09:30</option>
+                  <option value="10:30">10:30</option>
+                  <option value="11:30">11:30</option>
+                  <option value="14:00">14:00</option>
+                  <option value="15:00">15:00</option>
+                  <option value="16:00">16:00</option>
+                  <option value="17:00">17:00</option>
+                  <option value="18:00">18:00</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="form-msg" class="form-label">Notes de Précision (Facultatif)</label>
+              <textarea id="form-msg" class="form-input" placeholder="Précisez ici vos besoins particuliers, ordonnance actuelle..."></textarea>
+            </div>
+
+            <button type="submit" class="btn-premium btn-gold form-submit-btn">
+              Confirmer mon rendez-vous
+            </button>
+          </form>
+
+          <!-- Success State (Hidden initially) -->
+          <div class="form-success-message">
+            <div class="success-icon">✓</div>
+            <h3>Demande Envoyée !</h3>
+            <p>Merci pour votre confiance. Votre rendez-vous est en cours de validation pour le créneau suivant :</p>
+            <div class="success-details" style="background: var(--bg-tertiary); padding: 1.5rem; border-radius: var(--border-radius-sm); border: 1px solid var(--glass-border); width: 100%; margin-bottom: 2rem; line-height: 1.6;">
+              <!-- Injecté dynamiquement par JS -->
+            </div>
+            <button class="btn-premium btn-outline" onclick="location.reload();">Faire une autre demande</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- --- PIED DE PAGE (FOOTER) --- -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <!-- Info Cabinet -->
+      <div>
+        <a href="#home" class="logo">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="6" cy="18" r="4"/>
+            <circle cx="18" cy="18" r="4"/>
+            <path d="M12 18a2 2 0 0 0-2-2H6M12 18a2 2 0 0 1 2-2h4M2 14l2.5-4h15l2.5 4"/>
+          </svg>
+          <span style="font-size: 1.25rem;">L'Optique Signature</span>
+        </a>
+        <p class="footer-info-desc">
+          Votre vision mérite notre expertise et le meilleur de l'artisanat français.
+        </p>
+        <div class="footer-socials">
+          <a href="#" class="footer-socials-link" aria-label="Facebook">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+            </svg>
+          </a>
+          <a href="#" class="footer-socials-link" aria-label="Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+          </a>
+          <a href="#" class="footer-socials-link" aria-label="Pinterest">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M8 22a9 9 0 0 1-2-12 9 9 0 0 1 14-3 9 9 0 0 1 2 11 9 9 0 0 1-10 4M9 10a3 3 0 0 1 3 3v4a3 3 0 0 1-6 0v-4a3 3 0 0 1 3-3z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Liens Utiles -->
+      <div>
+        <h4 class="footer-title">Le Cabinet</h4>
+        <ul class="footer-links">
+          <li><a href="#home" class="footer-links-link">Accueil</a></li>
+          <li><a href="#services" class="footer-links-link">Le Concept</a></li>
+          <li><a href="#collection" class="footer-links-link">Montures Créateurs</a></li>
+          <li><a href="#rendezvous" class="footer-links-link">Prise de RDV</a></li>
+        </ul>
+      </div>
+
+      <!-- Liens Partenaires / Verres -->
+      <div>
+        <h4 class="footer-title">Partenaires verres</h4>
+        <ul class="footer-links">
+          <li><a href="#" class="footer-links-link">Essilor / Varilux</a></li>
+          <li><a href="#" class="footer-links-link">Nikon Eyewear</a></li>
+          <li><a href="#" class="footer-links-link">Zeiss Precision</a></li>
+          <li><a href="#" class="footer-links-link">Garantie Casse</a></li>
+        </ul>
+      </div>
+
+      <!-- Newsletter -->
+      <div>
+        <h4 class="footer-title">Lettre d'Information</h4>
+        <p class="footer-newsletter-desc">
+          Inscrivez-vous pour recevoir nos nouvelles collections et articles d'experts de la vue.
+        </p>
+        <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Merci de votre inscription à notre lettre d\'information !'); this.reset();">
+          <input type="email" class="newsletter-input" placeholder="Votre email" required aria-label="Votre adresse email">
+          <button type="submit" class="newsletter-btn" aria-label="S'inscrire">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="22" y1="2" x2="11" y2="13"></line>
+              <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="container footer-bottom">
+      <p>&copy; 2026 L'Optique Signature. Tous droits réservés.</p>
+      <ul class="footer-bottom-links">
+        <li><a href="#">Mentions Légales</a></li>
+        <li><a href="#">Politique de Confidentialité</a></li>
+        <li><a href="#">Gestion des Cookies</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- JS Logic -->
+  <script src="js/main.js"></script>
+</body>
+</html>
